@@ -34,6 +34,19 @@
       </section> 
       <script>
 
+          document.getElementById("scrollTo2").addEventListener('click', () => {
+            const offsetY1 = document.getElementById("section1").offsetHeight;
+            console.log(offsetY1);
+            window.scrollTo({top: offsetY1, left: 0, behavior: "smooth",})
+          })
+          document.getElementById("scrollTo1").addEventListener('click', () => {
+            const offsetY1 = document.getElementById("section1").offsetHeight;
+            const offsetY2 = 0 - offsetY1;
+          console.log(offsetY2);
+          window.scrollTo({top: offsetY2, left: 0, behavior: "smooth",})
+          })
+          
+
       </script>
     </body>
 </html>

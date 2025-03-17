@@ -23,7 +23,9 @@
       <p id="secretMessage" class="hidden">This is a secret message.</p>
       <a href="reference.html">Peek at an answer</a>
       <script>
-        
+          document.getElementById('theButton').addEventListener('mousemove', () => {
+            document.getElementById('theButton').classList.toggle('hidden')
+          })        
       </script>
     </body>
 </html>

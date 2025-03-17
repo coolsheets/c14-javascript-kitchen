@@ -17,6 +17,7 @@
           .green {
             background-color: green;
             color:white;
+            font-size: x-large;
             padding: 0.5rem;
           }
         </style>
@@ -29,7 +30,7 @@
       <button id='theButton' class='red'>Click me!</button>
       <a href='reference.html'>Peek at an answer</a>
       <script>
-          document.getElementById('theButton').addEventListener('click', () => {
+          document.getElementById('theButton').addEventListener('mousemove', () => {
             document.getElementById('theButton').classList.toggle('green')
           })
       </script>

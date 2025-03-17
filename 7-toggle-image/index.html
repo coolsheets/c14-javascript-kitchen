@@ -26,7 +26,19 @@
       
       <a href="reference.html">Peek at an answer</a>
       <script>
-        
+          // let currentImageId = 'burger-open.svg';
+          // document.getElementById('burgerButton').addEventListener('click', () => {
+          //   document.getElementById('burgerButton').src = currentImageId
+          //   if (currentImageId == 'burger-open.svg'); currentImageId = 'burger-close.svg'; currentImageId = 'burger-open.svg'
+
+          //   }
+          // )          
+          let burgerOpen = true
+          document.getElementById('burgerButton').addEventListener('click', () => {
+            burgerOpen = !burgerOpen
+            const newImage = (burgerOpen) ? 'burger-open.svg' : 'burger-close.svg'
+            document.getElementById('burgerButton').src = newImage
+          })        
       </script>
     </body>
 </html>
