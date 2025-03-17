@@ -13,6 +13,9 @@
           .red {
             background-color: red;
           }
+          .blue {
+            background-color: blue;
+          }
         </style>
     </head>
     <body>
@@ -23,6 +26,14 @@
       <button id="theButton" class="red">Click me!</button>
       <a href="reference.html">Peek at an answer</a>
       <script>
+          // function classy() {
+          //   document.getElementById("theButton").classList.add("blue");
+          // }
+          // document.addEventListener("click", classy);
+          document.addEventListener("click", () => {
+            document.getElementById("theButton").classList.add("blue")
+          })
+
 
       </script>
     </body>
